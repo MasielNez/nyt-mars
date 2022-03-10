@@ -1,0 +1,107 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-title-container:hover {
+    cursor: pointer;
+}
+.nav-title-container {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav-translate {
+    align-items: center;
+    display: flex;
+    padding: 30px;
+}
+
+.nav-logo {
+    align-self: center;
+    margin: 10px;
+}
+
+.nav-title {
+    font-family: "American Typewriter", sans-serif;
+    font-size: 5rem;
+    margin: 10px;
+}
+
+.nav-translate-icon {
+    padding-left: 15px;
+}
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.switch input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.slider {
+    -webkit-transition: 0.4s;
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    -webkit-transition: 0.4s;
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #9191c7;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #9191c7;
+}
+
+input:checked + .slider:before {
+    -ms-transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-title {
+        font-size: 2.5rem;
+    }
+    .nav-logo {
+        align-self: center;
+        margin: 5px;
+        width: 75px;
+    }
+}

@@ -1,0 +1,48 @@
+.article-view {
+    align-items: center;
+    background-color: #fbfdff;
+    display: flex;
+    flex-flow: column;
+}
+
+.article-title {
+    border-bottom: 5px solid #9191c7;
+    display: flex;
+    font-family: Didot, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.article-image {
+    display: flex;
+    margin: 10px;
+    width: 60%;
+}
+
+.article-body-text {
+    color: #384242;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    padding: 35px 20%;
+    text-align: justify;
+    text-justify: inter-word;
+    white-space: pre-wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .article-title {
+        font-size: 2rem;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .article-image {
+        width: 100%;
+    }
+
+    .article-body-text {
+        padding: 20px;
+    }
+}

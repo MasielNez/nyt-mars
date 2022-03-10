@@ -1,0 +1,32 @@
+.article-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px;
+    width: 500px;
+}
+.article-list-item-image-container {
+    background-color: #d3d3d3;
+    display: flex;
+    height: 350px;
+}
+.article-list-item-image {
+    background-color: #c8c9d0;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+.article-list-item-title {
+    color: #1f2931;
+    font-family: DomaineDisplay, Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    height: 50px;
+}
+
+.article-list-item:hover {
+    cursor: pointer;
+    text-decoration-color: #8989ff;
+    text-decoration-line: underline;
+}
